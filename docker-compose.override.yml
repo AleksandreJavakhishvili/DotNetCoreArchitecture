@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  dotnetcorearchitecture.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_HTTPS_PORT=44323
+    ports:
+      - "15240:80"
+      - "44323:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+  dotnetcorearchitecture.sql:
+    ports:
+      - "5431:5432"

@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  dotnetcorearchitecture.api:
+    image: ${DOCKER_REGISTRY-}dotnetcorearchitectureapi
+    build:
+      context: .
+      dockerfile: DotNetCoreArchitecture.Api/Dockerfile
+    depends_on:
+      - dotnetcorearchitecture.sql
+
+  dotnetcorearchitecture.sql:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dotnetcorearchitecture
