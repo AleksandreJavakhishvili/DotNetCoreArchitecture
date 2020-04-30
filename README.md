@@ -7,7 +7,7 @@ This is an example of a clean architecture template using:
 * MediatR
 
 # :pencil: Article
-See Medium article about this project [How to be more declarative when implementing CQRS with MediatR in .Net Core](https://medium.com/@akojavakhishvili/how-to-be-more-declarative-when-implementing-cqrs-with-mediatr-in-net-core-c8b9ff7ea2a4)
+See Medium article about [How to be more declarative when implementing CQRS with MediatR in .Net Core](https://medium.com/@akojavakhishvili/how-to-be-more-declarative-when-implementing-cqrs-with-mediatr-in-net-core-c8b9ff7ea2a4)
 
 # :whale: Running with Docker
 You must install Docker & Docker Compose first.
